@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+
+
+.calc {
+    width: 600px;
+    border: solid 2px grey;
+    background-color: grey;
+    padding: 20px;
+
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    grid-auto-rows: 80px;
+    gap:20px;
+}
+
+
+
+.calc_result{
+    grid-column: 1/-1;
+    background-color: WHITE;
+    color: black;
+    font-size: 60px;
+    padding: 10px;
+}
+
+
+.calc_btn {
+
+    font-size: 30px;
+    cursor: pointer;
+
+
+}
+
+.equal {
+    grid-column: 2/-1;
+}
